@@ -366,7 +366,7 @@ div[id=footthree] {
     font-size: 1.1vw;
 }
 
-/* ====== MOBILE/IPAD LAYOUTS ====== */
+/* ====== MOBILE LAYOUT ====== */
 
 @media (max-width: 430px) {
     header {
@@ -403,7 +403,7 @@ div[id=footthree] {
     nav {
         padding: 0 0;
         top: 14.1vw;
-        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     nav a {
