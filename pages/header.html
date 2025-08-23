@@ -1,0 +1,91 @@
+<header>
+            <button id="menubutton" onclick="toggleMenu()">
+              <img src="/images/menu.svg" alt="Menu" id="buttonimage">
+            </button>
+
+            <img id="Logo" src="/images/Logo Branding.png" alt="La Amore">
+
+            <div id="header-icons">
+                <a href="#" title="Search">
+                    <img src="/images/search.svg" alt="Search" id="icon-search" style="display: none;">
+                </a>
+                <button id="cart-button">
+                    <img src="/images/cart.png" alt="Cart" id="icon-cart">
+                </button>
+            </div>
+
+            <div id="sidebar">
+              <div class="sidebar-header">
+                <img id="menu-Logo" src="/images/Logo Branding.png" alt="La Amore">
+              </div>
+
+              <div id="dropdowns">
+
+                <div class="nav-section">
+                  <div class="section-title">Main</div>
+                    <a href="/index.html" class="nav-link">Home</a>
+                    <a href="/pages/about/" class="nav-link">About</a>
+                    <a href="/pages/contact/" class="nav-link">Contact</a>
+                  </div>
+
+                <div class="dropdown-category">
+                  <button class="dropdown-toggle" onclick="toggleDropdown('collections')">
+                    Collections
+                  </button>
+                  <div class="dropdown-content" id="collections">
+                    <a href="/pages/casualwear/" class="nav-link">Casual Wear</a>
+                    <a href="#" class="nav-link">Premium Wear</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-category">
+                  <button class="dropdown-toggle" onclick="toggleDropdown('support')">
+                    Support
+                  </button>
+                  <div class="dropdown-content" id="support">
+                    <a href="/pages/shipping/" class="nav-link">Shipping</a>
+                    <a href="#" class="nav-link">FAQ</a>
+                    <a href="#" class="nav-link">Feedback</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-category">
+                  <button class="dropdown-toggle" onclick="toggleDropdown('legal')">
+                    Legal
+                  </button>
+                  <div class="dropdown-content" id="legal">
+                    <a href="/pages/disclaimer/" class="nav-link">Disclaimer</a>
+                    <a href="/pages/privacypolicy/" class="nav-link">Privacy Policy</a>
+                    <a href="/pages//terms/" class="nav-link">Terms of Service</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-footer">
+                <p>© 2024 La Amore.<br>
+                  All rights reserved.</p>
+              </div>
+            </div>
+
+            <div id="cart-sidebar">
+              <div class="cart-header">
+                <h4>Shopping Cart</h4>
+              </div>
+
+              <div id="cart-items"></div>
+
+              <!-- ADD THIS CART FOOTER -->
+              <div class="cart-footer">
+                <div class="cart-total">
+                  <span>Subtotal:</span>
+                  <span id="cart-total-sign">$
+                    <span id="cart-total-amount">0.00</span>
+                  </span>
+                </div>
+
+                <button id="checkout">
+                  Checkout
+                </button>
+              </div>
+            </div>
+</header>
