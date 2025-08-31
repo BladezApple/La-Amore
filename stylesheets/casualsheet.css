@@ -1,0 +1,133 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    padding-top: 12vw;
+}
+
+#filter-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin: 1vw 0.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#filter-icon {
+    width: 1.7vw;
+    margin-right: 0.5vw;
+}
+
+#filter-text {
+    font-family: 'Montserrat';
+    font-size: 1.1vw;
+    color: rgb(60, 60, 60);
+}
+
+#casualwear {
+    margin: 1vw 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.casualproduct {
+    width: fit-content;
+    margin-right: 0.8vw;
+    margin-bottom: 4vw;
+}
+
+.casualproduct:nth-child(4n) {
+    margin-right: 0;
+}
+
+.casualproduct:hover {
+    cursor: pointer;
+}
+
+.casualproduct:hover .product-imagepre {
+    opacity: 1;
+}
+
+.casualproduct:hover .product-title {
+    color: rgb(60, 60, 60);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 23.7vw;
+    height: 30.5vw;
+}
+
+.product-image {
+    width: 23.7vw;
+    position: absolute;
+}
+
+.product-imagepre {
+    width: 23.7vw;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+.product-title {
+    font-family: 'Montserrat';
+    font-size: 1.2vw;
+    width: 22vw;
+    color: black;
+    transition: color 0.2s ease-in;
+}
+
+.product-cost {
+    font-family: sans-serif;
+    color: rgb(60, 60, 60);
+}
+
+.product-title,
+.product-cost {
+    margin: 0.4vw;
+}
+
+/* ====== MOBILE LAYOUT ====== */
+
+@media (max-width: 430px) { 
+    body {
+        padding-top: 20vw;
+    }
+
+    #casualwear {
+        padding-bottom: 23vw;
+    }
+
+    .casualproduct {
+        margin-right: 3vw;
+    }
+
+    .casualproduct:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .product-image {
+        width: 40vw;
+    }
+
+    .product-imagepre {
+        width: 40vw;
+    }
+
+    .image-wrapper {
+        width: 40vw;
+        height: 51.48vw;
+    }
+
+    .product-title {
+        font-size: 3.6vw;
+        width: 34vw;
+    }
+
+    .product-cost {
+        font-size: 3.2vw;
+    }
+}
