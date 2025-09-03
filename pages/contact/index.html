@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us</title>
+    <meta
+      name="description"
+      content="Need help or have a question? Get in touch with La Amore's support team for fast, friendly assistance and product inquiries."
+    />
+
+    <link rel="canonical" href="https://laamore.store/pages/contact/" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/Logo White.png" media="(prefers-color-scheme: dark)"/>
+    <link rel="icon" href="/images/Logo Black.png" media="(prefers-color-scheme: light)"/>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/mainsheet.css" />
+    <link rel="stylesheet" href="/stylesheets/contactsheet.css" />
+    <link rel="stylesheet" href="/stylesheets/cart-styles.css" />
+
+    <!--SEO Extras-->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#A07F08" />
+
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "La Amore",
+          "url": "https://laamore.store",
+          "logo": "https://laamore.store/favicon-512x512.png",
+          "sameAs": [
+            "https://www.instagram.com/la.amore_official/",
+            "https://www.facebook.com/profile.php?id=61578105007162",
+            "https://www.youtube.com/@la.amore_official"
+          ],
+          "description": "La Amore is a premium online clothing brand based in Pakistan, offering luxurious and stylish hoodies for modern individuals.",
+          "founder": "Muhammad Ahmad Saleem",
+          "foundingDate": "2024",
+          "location": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lahore",
+              "addressCountry": "PK"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Casual and Premium Hoodies",
+          "image": "https://laamore.store/favicon-512x512.png",
+          "description": "La Amore offers a curated collection of premium and casual hoodies, blending luxury with everyday comfort for the modern wardrobe.",
+          "brand": {
+            "@type": "Brand",
+            "name": "La Amore"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "url": "https://laamore.store",
+            "priceCurrency": "USD",
+            "lowPrice": "72",
+            "highPrice": "150",
+            "offerCount": "10"
+          }
+        }
+      ]
+    </script>
+  </head>
+
+    <!--BODY-->
+
+    <body>
+        <div id="header"></div>
+        <div id="navigation"></div>
+
+        <div id="contactcontainer">
+            <div id="formcontainer">
+                <form id="contactform">
+                    <h2>DROP US A MESSAGE!</h2>
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                    <br>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <br>
+                    <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="infocontainer">
+                <h2>CONTACT INFORMATION</h2>
+                <p>We welcome your thoughts on our service, collection, or anything else you’d like to share.
+                  Fill in the form or reach out to us through our Social Media Pages - we are always
+                  listening!
+                </p>
+                <div id="contacttable">
+                    <div class="contactinfo">
+                        <img src="/images/phone.svg" alt="Call" id="phoneicon">
+                        <p>+92 --- ---- ---</p>
+                    </div>
+
+                    <div class="contactinfo">
+                        <img src="/images/envelope.svg" alt="Email" id="mailicon">
+                        <p>support@laamore.store</p>
+                    </div>
+
+                    <div class="contactinfo">
+                        <img src="/images/clock.svg" alt="Timings" id="clockicon">
+                        <p>24/7 Services</p>
+                    </div>
+                </div>
+
+                <a href="#footer" id="footer-linker">Social Pages</a>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="/js code/loader.js" type="module"></script>
+        <script src="/js code/firebase-config.js" type="module"></script>
+        <script src="/js code/cartdetails.js" type="module"></script>
+        <script src="/js code/cart-display.js" type="module"></script>
+        <script src="/js code/contactform.js" type="module"></script>
+    </body>
+</html>
